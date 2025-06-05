@@ -2,10 +2,9 @@
 from fastapi import FastAPI, HTTPException, status, Depends
 import uvicorn
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship, Session
-from sqlalchemy.exc import IntegrityError
 
 # Инициализация FastAPI
 app = FastAPI()
